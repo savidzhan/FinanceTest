@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10dp"
+    android:background="@color/teal_700">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/transactionListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addTransactionToCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add transaction"
+        android:layout_above="@id/goBackToCards"
+        android:layout_marginBottom="1dp"/>
+    <Button
+        android:id="@+id/goBackToCards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to cards"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"/>
+
+
+</RelativeLayout>
